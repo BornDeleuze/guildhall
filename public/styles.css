@@ -520,7 +520,24 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
