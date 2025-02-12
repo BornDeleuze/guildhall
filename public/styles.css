@@ -521,6 +521,27 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-20 {
+    top: calc(var(--spacing) * 20);
+  }
+  .top-50 {
+    top: calc(var(--spacing) * 50);
+  }
+  .top-auto {
+    top: auto;
+  }
+  .right-50 {
+    right: calc(var(--spacing) * 50);
+  }
+  .right-auto {
+    right: auto;
+  }
   .flex {
     display: flex;
   }
@@ -546,15 +567,27 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .text-center {
+    text-align: center;
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-gray-200 {
+    color: var(--color-gray-200);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
@@ -564,6 +597,9 @@
   }
   .text-red-400 {
     color: var(--color-red-400);
+  }
+  .text-red-900 {
+    color: var(--color-red-900);
   }
 }
 @keyframes spin {
