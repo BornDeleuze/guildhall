@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles.css --watch"
+    "build-css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles.css --watch",
+    "serve": "serve -s .",
+    "dev": "pnpm run build-css & pnpm run serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
     "tailwindcss": "^4.0.4"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
